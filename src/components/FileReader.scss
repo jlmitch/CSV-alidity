@@ -1,0 +1,39 @@
+.filereader-wrapper {
+    margin-bottom: 10px;
+
+    h3 {
+        color: #333333;
+    }
+    
+    .file-import {
+        margin-bottom: 20px;
+
+        .file-import-input {
+            font-size: 16px;
+            border: 1px solid #333333;
+            height: 21px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .file-import-button {
+            font-size: 16px;
+            color: #FCFCFC;
+            background-color: #00A3E0;
+            height: 32px;
+            min-width: 64px;
+            border-radius: 30px;
+            padding: 6px 30px;
+            font-weight: bolder;
+            outline: none;
+
+            &:hover {
+                background-color: #333333;
+            }
+
+            &:active {
+                background-color: green;
+            }
+        }
+    }
+
+}

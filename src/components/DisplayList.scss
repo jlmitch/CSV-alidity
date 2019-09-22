@@ -1,0 +1,17 @@
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .list-wrapper {
+        width: 800px;
+        margin: 10px 0;
+        border: 1px solid #333333;
+        background-color: #EDEFF2;
+
+        label {
+            font-size: 24px;
+            color: #00A3E0;
+        }
+    }
+}
