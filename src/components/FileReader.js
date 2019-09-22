@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Papa from '../../node_modules/papaparse/papaparse';
 import DisplayList from './DisplayList';
-
 import './FileReader.scss';
 
 class FileReader extends Component {
@@ -18,6 +17,7 @@ class FileReader extends Component {
 
     handleOnClick = () => {
         const { csvfile } = this.state;
+
         if(csvfile) {
             Papa.parse(csvfile, {
                 complete: this.updateData,
@@ -30,7 +30,7 @@ class FileReader extends Component {
         }
     };
 
-    updateData = (result) => {
+    updateData = result => {
         const csvData = result.data;
 
         // Create an array that has the duplicates removed
@@ -54,7 +54,6 @@ class FileReader extends Component {
 
         console.log("duplicateArray: ", getArrayDifference)
         console.log("data: ", uniqueArray)
-        return this.state.parsedData;
     };
     
     render() {
@@ -77,8 +76,7 @@ class FileReader extends Component {
                     >Import Now!</button>
                 </div>
                 { showResults 
-                    ?
-                    <DisplayList 
+                    ? <DisplayList 
                         nonduplicates={parsedData}
                         duplicates={duplicateEntries}
                         data={parsedData} />

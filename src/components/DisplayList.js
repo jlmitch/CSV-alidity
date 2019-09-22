@@ -1,6 +1,6 @@
 import React from 'react';
 import DuplicateDisplay from './DuplicateDisplay';
-import NonDuplicate from './NonDuplicates';
+import NonDuplicateDisplay from './NonDuplicateDisplay';
 import './DisplayList.scss'
 
 export default function DisplayList({ duplicates, nonduplicates, data }) {
@@ -15,7 +15,7 @@ export default function DisplayList({ duplicates, nonduplicates, data }) {
             <div className="list-wrapper">
                 <label>Non-Duplicates</label>
                 <ul>
-                    <NonDuplicate data={data}/>
+                    <NonDuplicateDisplay data={data}/>
                 </ul>
             </div>
         </div>
