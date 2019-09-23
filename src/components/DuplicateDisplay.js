@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function DuplicateDisplay({ data }) {
-    return (    
+    return (
         data.map(item => <li key={Math.random(item.id)}>{Object.values(item).join(" / ")}</li>)
     )
 }

@@ -27,6 +27,6 @@ I'm using a library called Papa Parse to parse the .csv file.  Here's the docume
 
 Well, firstly, I would finish the requirements.  I'd also write some validation to ensure the user was submiting an actual .csv file.  I did however, add a very small check to ensure that the user adds some type of file, at the very least.  A `window.Alert` is not a very good way to handle it, but it was added more for the sake of time. Another obvious thing I would have done would be to write some unit tests.
 
-I would have also gone in and broke the FileReader component into smaller pieces as it's starting to get a little bloated.  Overall, I really enjoyed this challenge, and fully intend on finishing it. Thanks for the chance! I'm really hoping that everything works out.  This company seems really great, and exactly what I'm looking for to help cultivate my growth as a developer. 
+I would have also gone in and broke the FileReader component into smaller pieces as it's starting to get a little bloated. In addition to breaking it up, I would organize the file structure a little more neatly.  Overall, I really enjoyed this challenge, and fully intend on finishing it. Thanks for the chance! I'm really hoping that everything works out.  This company seems really great, and exactly what I'm looking for to help cultivate my growth as a developer. 
 
 P.S. I left a couple `console.logs` in the code so that you can see what was returned when testing.
